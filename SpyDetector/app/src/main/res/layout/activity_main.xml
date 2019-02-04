@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/istock"
+    >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/timeText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Does the name of the color match the text color?"
+        android:textSize="28dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                >
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/color"
+                    android:text="NAME"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:layout_margin="5dp"
+
+                    />
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/color"
+                    android:text="COLOR"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:layout_margin="5dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:text="BLUE"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#fff"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:id="@+id/colorName"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:text="BLUE"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#fff"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:id="@+id/colorColor"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hand"
+
+                >
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/question"
+
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/result"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#000"
+                android:text="YES"
+                android:textColor="#868686"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:id="@+id/yesBtn"
+                android:onClick="yesBtnClicked"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:text="NO"
+                android:textColor="#868686"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:background="#000"
+                android:id="@+id/noBtn"
+                android:onClick="noBtnClicked"
+                />
+        </LinearLayout>
+
+</RelativeLayout>
